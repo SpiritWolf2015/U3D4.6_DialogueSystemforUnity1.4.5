@@ -4,6 +4,7 @@ using PixelCrushers.DialogueSystem;
 
 public class ConditionObserverSetVariable_BehaviourScript : MonoBehaviour {
 
+    public string m_DialogueLuaVariableKey = "player_in";
 	
 	void Start () {
 	
@@ -16,9 +17,9 @@ public class ConditionObserverSetVariable_BehaviourScript : MonoBehaviour {
 
     void OnTriggerEnter (Collider other) {
         if (other.CompareTag("Player")) {
-            Debug.Log("SetVariable->PlayerIn为真");
+            Debug.Log(string.Format("SetVariable->{0}为真", m_DialogueLuaVariableKey));
             // 设置LUA变量
-            DialogueLua.SetVariable("player_in", true);
+            DialogueLua.SetVariable(m_DialogueLuaVariableKey, true);
         }
     }
 

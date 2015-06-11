@@ -19,9 +19,17 @@ Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D
 Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\GzcQuickStart_Data\Managed\DialogueSystem.dll into Unity Child Domain
 Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\GzcQuickStart_Data\Managed\LuaInterpreter.dll (this message is harmless)
 Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\GzcQuickStart_Data\Managed\LuaInterpreter.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
+- Completed reload, in  0.046 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\GzcQuickStart_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\GzcQuickStart_Data\Managed\System.dll (this message is harmless)
+SetVariable->player_in为真
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SetVariable->player_in2为真
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

@@ -11,7 +11,7 @@ public class ShowAlertBehaviourScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.G)) {
             Debug.Log("脚本里写的提示消息");
             DialogueManager.ShowAlert("脚本里写的提示消息");
         }
