@@ -1,0 +1,86 @@
+﻿Database
+Name,Version,Author,Description,Emphasis1,Emphasis2,Emphasis3,Emphasis4
+GzcQuickStart Dialogue Database,,,,#00000000 ---,#00000000 ---,#00000000 ---,#00000000 ---
+Global User Script
+
+Actors
+ID,Portrait,AltPortraits,Name,Pictures,Description,IsPlayer
+Number,Special,Special,Text,Files,Text,Boolean
+1,,[],Player,[],,True
+2,,[],Sergeant Graves,[],,False
+Items
+ID,Name,Pictures,Description,Is Item,Success Description,Failure Description,State,Trackable
+Number,Text,Files,Text,Boolean,Boolean,Text,Text,Boolean
+1,Quest1,[],请到大厅等候区等待叫号,False,player_in,,unassigned,True
+2,Quest2,[],人物跟随理财经理来到理财经理办公室,False,bb,,unassigned,True
+Locations
+ID
+Number
+Variables
+ID,Name,Initial Value,Description
+Number,Text,Text,Text
+1,Alert,,
+2,player_in,False,
+3,player_in2,False,
+Conversations
+ID,Title,Pictures,Description,Actor,Conversant
+Number,Text,Files,Text,Actor,Actor
+1,New Conversation 1,[],,1,2
+DialogueEntries
+entrytag,ConvID,ID,Actor,Conversant,Title,MenuText,DialogueText,IsGroup,FalseConditionAction,ConditionPriority,Conditions,Script,Sequence,Pictures,Description,Parenthetical,Audio Files,Video File
+Text,Number,Number,Number,Number,Text,Text,Text,Boolean,Special,Special,Text,Text,Text,Files,Text,Text,Files,Text
+Player_1_0,1,0,1,2,START,,,False,Block,Normal,,,None(),[],,,[],
+Player_1_2,1,2,1,2,New Dialogue Entry,,客户：好，谢谢。,False,Block,Normal,,Quest["Quest1"].State = "active"; Variable["Alert"] = "请到大厅等候区等待叫号",,[],,,[],
+Player_1_3,1,3,1,2,New Dialogue Entry,,客户：您好，我想取社保，再存下定期。,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_4,1,4,2,1,New Dialogue Entry,,大堂经理：好的，我给您取个号，您先请坐，稍等一下，马上就能叫到您的号。,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_5,1,5,2,2,New Dialogue Entry,,大堂经理：您好，请问您需要办理什么业务？,False,Block,Normal,Quest["Quest1"].State == "unassigned",,,[],,,[],
+Sergeant_Graves_1_6,1,6,2,1,New Dialogue Entry,,您先请坐，稍等一下，马上就能叫到您的号。,False,Block,Normal,Quest["Quest1"].State == "active",,,[],,,[],
+Sergeant_Graves_1_7,1,7,2,1,New Dialogue Entry,,理财经理：您可以看下我行最新的理财产品，比您存定期划算很多呢，也没什么风险，您可以尝试一下。,False,Block,Normal,(Quest["Quest1"].State == "success" and Quest["Quest2"].State == "unassigned"),,,[],,,[],
+Player_1_8,1,8,1,2,New Dialogue Entry,,客户：要多少钱？,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_9,1,9,2,1,New Dialogue Entry,,理财经理：5万起卖。,False,Block,Normal,,,,[],,,[],
+Player_1_10,1,10,1,2,New Dialogue Entry,,客户：没有风险么？,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_11,1,11,2,1,New Dialogue Entry,,理财经理：有保本型和非保本型，您第一次可以试试我行保本型理财，但收益会相对非保本的低一些，我们非保本也卖的非常好，都是由我行专业团队筛选过的，销售至今从未出现过未兑付的情况。,False,Block,Normal,,,,[],,,[],
+Player_1_12,1,12,1,2,New Dialogue Entry,,客户：也行，但是我只打算存3个月，之后要用钱。,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_13,1,13,2,1,New Dialogue Entry,,理财经理：那我们这期在售的78天，非常适合您，风险很低，您看一下。,False,Block,Normal,,,,[],,,[],
+Player_1_14,1,14,1,2,New Dialogue Entry,,客户：好，那请帮我办理吧。,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_15,1,15,2,1,New Dialogue Entry,,理财经理：好的，请跟我来。,False,Block,Normal,,Quest["Quest2"].State = "active"; Variable["Alert"] = "人物跟随理财经理来到理财经理办公室",,[],,,[],
+Sergeant_Graves_1_16,1,16,2,1,New Dialogue Entry,,理财经理：那请出示您的身份证件，我帮您先做个风险评估，这个需要先测试您的风险类型，好帮助您选择适合自己的理财产品。,False,Block,Normal,Quest["Quest2"].State == "success",,,[],,,[],
+Player_1_17,1,17,1,2,New Dialogue Entry,,客户：好的，这是我的证件。（拿出自己的证件，并填表做风险评估）,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_18,1,18,2,1,New Dialogue Entry,,理财经理：请问您的购买资金都是在我行的账户上么？,False,Block,Normal,,,,[],,,[],
+Player_1_19,1,19,1,2,New Dialogue Entry,,客户：哦 ，不是，还有一部分在别的行。,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_20,1,20,2,1,New Dialogue Entry,,"理财经理：那也没问题,用我行的POS机直接刷他行卡，转到您在我行的账户上，免收手续费的。",False,Block,Normal,,,,[],,,[],
+Player_1_21,1,21,1,2,New Dialogue Entry,,客户：可以。（用pos刷卡、输入密码）,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_22,1,22,2,1,New Dialogue Entry,,理财经理：这是这期理财产品的风险提示函，您看下，确定后请签字认可，就购买成功了，谢谢您对我行产品的体验和支持，相信您日后一定会非常满意。,False,Block,Normal,,,,[],,,[],
+Player_1_23,1,23,1,2,New Dialogue Entry,,客户：好，我也希望，谢谢。（签字）,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_24,1,24,2,1,New Dialogue Entry,,理财经理：这是我们应该做的，希望您以后有其他的金融问题或需求都可以咨询我们，我们有什么好产品也会向您推荐的，这是我的名片。,False,Block,Normal,,,,[],,,[],
+Player_1_25,1,25,1,2,New Dialogue Entry,,客户：好的，好的，再见。,False,Block,Normal,,,,[],,,[],
+Sergeant_Graves_1_26,1,26,2,1,New Dialogue Entry,,理财经理：谢谢，再见，欢迎下次再来！,False,Block,Normal,,Variable["Alert"] = "Game Over!!",,[],,,[],
+OutgoingLinks
+OriginConvID,OriginID,DestConvID,DestID,ConditionPriority
+Number,Number,Number,Number,Special
+1,0,1,5,Normal
+1,0,1,6,Normal
+1,0,1,7,Normal
+1,0,1,16,Normal
+1,3,1,4,Normal
+1,4,1,2,Normal
+1,5,1,3,Normal
+1,6,1,2,Normal
+1,7,1,8,Normal
+1,8,1,9,Normal
+1,9,1,10,Normal
+1,10,1,11,Normal
+1,11,1,12,Normal
+1,12,1,13,Normal
+1,13,1,14,Normal
+1,14,1,15,Normal
+1,16,1,17,Normal
+1,17,1,18,Normal
+1,18,1,19,Normal
+1,19,1,20,Normal
+1,20,1,21,Normal
+1,21,1,22,Normal
+1,22,1,23,Normal
+1,23,1,24,Normal
+1,24,1,25,Normal
+1,25,1,26,Normal
