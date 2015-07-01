@@ -1,0 +1,129 @@
+Initialize engine version: 4.6.0f3 (30840d631a27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1333]
+    Renderer: AMD Radeon HD 7700 Series
+    Vendor:   ATI
+    VRAM:     2027 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\DialogueSystem.dll (this message is harmless)
+Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\DialogueSystem.dll into Unity Child Domain
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\LuaInterpreter.dll (this message is harmless)
+Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\LuaInterpreter.dll into Unity Child Domain
+- Completed reload, in  0.049 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\System.dll (this message is harmless)
+_Script 注册 PlayAnimateEvent 事件完成
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayAnimateTriggerListener:Start() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:10)
+ 
+(Filename: E Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PixelCrushers.DialogueSystem.SimpleController.Start () [0x00078] in E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\Dialogue System\Scripts\Supplemental\Utility\SimpleController.cs:55 
+ 
+(Filename: E Line: 0)
+
+从assetBundle异步加载场景CJC完毕！
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LoadSceneAsset:Update() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\LoadSceneAsset.cs:31)
+ 
+(Filename: E Line: 0)
+
+uri = file://E:/GZC/Test/Unity3d/PackageTest/UI/DialogueSystemforUnity/U3D4.6_DialogueSystemforUnity1.4.5/_out/EXE/JuJiaDai/JuJiaDai_Data/StreamingAssets/StandaloneWindows/JuJiaDaiScene.txt使用WWW读取一个配置文件失败，Couldn't open file /GZC/Test/Unity3d/PackageTest/UI/DialogueSystemforUnity/U3D4.6_DialogueSystemforUnity1.4.5/_out/EXE/JuJiaDai/JuJiaDai_Data/StreamingAssets/StandaloneWindows/JuJiaDaiScene.txt
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+<readConfigTxtW3>c__Iterator14:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:88)
+<loadPushAssetBundle>c__Iterator15:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:149)
+<loadAssets>c__Iterator12:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\LoadSceneAsset.cs:44)
+ 
+(Filename: E Line: 0)
+
+file://E:/GZC/Test/Unity3d/PackageTest/UI/DialogueSystemforUnity/U3D4.6_DialogueSystemforUnity1.4.5/_out/EXE/JuJiaDai/JuJiaDai_Data/StreamingAssets/StandaloneWindows/JuJiaDaiScene.unity3d
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<loadSingleAssetBundle>c__Iterator16:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:194)
+<loadPushAssetBundle>c__Iterator15:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:173)
+<loadAssets>c__Iterator12:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\LoadSceneAsset.cs:44)
+ 
+(Filename: E Line: 0)
+
+AssetBundle hash缓存:【JuJiaDaiScene.unity3d—— (UnityEngine.AssetBundle)】
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+<loadSingleAssetBundle>c__Iterator16:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:203)
+<loadPushAssetBundle>c__Iterator15:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:173)
+<loadAssets>c__Iterator12:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\LoadSceneAsset.cs:44)
+ 
+(Filename: E Line: 0)
+
+pushAssetName = JuJiaDaiScene.unity3d
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<loadPushAssetBundle>c__Iterator15:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:176)
+<loadAssets>c__Iterator12:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\LoadSceneAsset.cs:44)
+ 
+(Filename: E Line: 0)
+
+Event received: PlayAnimateEvent with data: talk_stand
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayAnimateTriggerListener:IEventListener.HandleEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:17)
+EventManager:TriggerEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:74)
+EventManager:Update() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:104)
+ 
+(Filename: E Line: 0)
+
+播放动画：talk_stand, 监听器 _Script
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayAnimateTriggerListener:playAnimation(String) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:29)
+PlayAnimateTriggerListener:IEventListener.HandleEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:19)
+EventManager:TriggerEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:74)
+EventManager:Update() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:104)
+ 
+(Filename: E Line: 0)
+
+播放动画：talk_stand, 监听器 _Script
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayAnimateTriggerListener:playAnimation(String) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:29)
+PlayAnimateTriggerListener:IEventListener.HandleEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:19)
+EventManager:TriggerEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:74)
+EventManager:Update() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:104)
+ 
+(Filename: E Line: 0)
+
+退出程序
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+QuitAppBehaviour:QuitApp() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\MonoBehaviour\QuitAppBehaviour.cs:7)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+PixelCrushers.DialogueSystem.ConditionObserver:Fire()
+PixelCrushers.DialogueSystem.ConditionObserver:Check()
+PixelCrushers.DialogueSystem.<Observe>c__Iterator11:MoveNext()
+ 
+(Filename: E Line: 0)
+
+卸载所有已经加载的AssetBundle！
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+UtilLoadAsset:destroyAllHasLoadAssetBundle(Boolean) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:252)
+LoadSceneAsset:OnDestroy() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\LoadSceneAsset.cs:37)
+ 
+(Filename: E Line: 0)
+

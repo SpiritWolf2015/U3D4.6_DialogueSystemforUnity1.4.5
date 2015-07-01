@@ -6,6 +6,7 @@ public class ShowAlertBehaviourScript : MonoBehaviour {
 
     [Range(0.1F, 5F)]
     public float m_tipSecond = 3F;
+    public string m_tipString = "tip";
 
 	// Use this for initialization
 	void Start () {
@@ -19,11 +20,9 @@ public class ShowAlertBehaviourScript : MonoBehaviour {
         }
 	}
 
-    void tip ( ) {
-        const string s = "C#脚本里写的提示消息，还可以LUA写提示消息";
-        Debug.Log(s);
+    void tip ( ) {      
         // 第2个参数是显示秒数
-        DialogueManager.ShowAlert(s, m_tipSecond);
+        DialogueManager.ShowAlert(m_tipString, m_tipSecond);
     }
 
 }
