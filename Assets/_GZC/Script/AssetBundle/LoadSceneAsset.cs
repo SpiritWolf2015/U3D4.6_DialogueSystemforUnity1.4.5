@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class LoadSceneAsset : MonoBehaviour {
-
-    public string m_sceneName = "MyScene";
+    
     public string[ ] m_assetNames;
+    public GameObject[ ] m_destroyInitSceneGos;
 
     //异步对象  
     private AsyncOperation mAsyn;
@@ -16,22 +16,12 @@ public class LoadSceneAsset : MonoBehaviour {
     IEnumerator Start ( ) {
         // 载入所有assetBundle
         yield return StartCoroutine(loadAssets( ));
-        StartCoroutine(LoadAbSceneAsync( ));      
-    }
 
-    void Update ( ) {
-        //如果场景没有加载完则显示Tip  
-        if (mAsyn != null && !mAsyn.isDone) {
-            //如果达到了更新的时间  
-            if (Time.time - lastTime >= UpdateTime) {
-                lastTime = Time.time;
-                Debug.Log("已经加载了(" + (int)(mAsyn.progress * 100) + "%" + ")");
-            }
-        } else {
-            Debug.Log(string.Format("从assetBundle异步加载场景{0}完毕！", m_sceneName));
-            this.enabled = false;
-        }
-    }  
+        // 载入完assetBundle后，异步加载场景
+        StartCoroutine(SceneManager.Instance.LoadSceneAdditiveAsync(0, null));
+        // 角色的主场景载入完了，就把现在的这个场景的东西删了。
+        StartCoroutine(SceneManager.Instance.LoadSceneAdditiveAsync(1, DestroyInitSceneGos));          
+    }
 
     void OnDestroy ( ) {
         UtilLoadAsset.destroyAllHasLoadAssetBundle(false);
@@ -47,14 +37,10 @@ public class LoadSceneAsset : MonoBehaviour {
         }
     }
 
-    void LoadAbScene ( ) {
-        Application.LoadLevelAdditive(m_sceneName);
-        Debug.Log(string.Format("从assetBundle加载场景{0}完毕！", m_sceneName));
-    }
-
-    IEnumerator LoadAbSceneAsync ( ) {
-        mAsyn = Application.LoadLevelAdditiveAsync(m_sceneName);
-        yield return mAsyn;
+    void DestroyInitSceneGos ( ) {
+        for (int i = 0; i < m_destroyInitSceneGos.Length; i++) {
+            Destroy(m_destroyInitSceneGos[i]);
+        }
     }
 
 }

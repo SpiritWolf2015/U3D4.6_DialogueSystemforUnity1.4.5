@@ -19,7 +19,7 @@ Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D
 Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\DialogueSystem.dll into Unity Child Domain
 Platform assembly: E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\LuaInterpreter.dll (this message is harmless)
 Loading E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\_out\EXE\JuJiaDai\JuJiaDai_Data\Managed\LuaInterpreter.dll into Unity Child Domain
-- Completed reload, in  0.049 seconds
+- Completed reload, in  0.165 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -76,46 +76,6 @@ UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 <loadPushAssetBundle>c__Iterator15:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\UtilLoadAsset.cs:176)
 <loadAssets>c__Iterator12:MoveNext() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\AssetBundle\LoadSceneAsset.cs:44)
- 
-(Filename: E Line: 0)
-
-Event received: PlayAnimateEvent with data: talk_stand
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayAnimateTriggerListener:IEventListener.HandleEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:17)
-EventManager:TriggerEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:74)
-EventManager:Update() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:104)
- 
-(Filename: E Line: 0)
-
-播放动画：talk_stand, 监听器 _Script
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayAnimateTriggerListener:playAnimation(String) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:29)
-PlayAnimateTriggerListener:IEventListener.HandleEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:19)
-EventManager:TriggerEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:74)
-EventManager:Update() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:104)
- 
-(Filename: E Line: 0)
-
-播放动画：talk_stand, 监听器 _Script
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PlayAnimateTriggerListener:playAnimation(String) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:29)
-PlayAnimateTriggerListener:IEventListener.HandleEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\PlayAnimateTriggerListener.cs:19)
-EventManager:TriggerEvent(IEvent) (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:74)
-EventManager:Update() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\EventManager\EventManager.cs:104)
- 
-(Filename: E Line: 0)
-
-退出程序
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-QuitAppBehaviour:QuitApp() (at E:\GZC\Test\Unity3d\PackageTest\UI\DialogueSystemforUnity\U3D4.6_DialogueSystemforUnity1.4.5\Assets\_GZC\Script\MonoBehaviour\QuitAppBehaviour.cs:7)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-PixelCrushers.DialogueSystem.ConditionObserver:Fire()
-PixelCrushers.DialogueSystem.ConditionObserver:Check()
-PixelCrushers.DialogueSystem.<Observe>c__Iterator11:MoveNext()
  
 (Filename: E Line: 0)
 

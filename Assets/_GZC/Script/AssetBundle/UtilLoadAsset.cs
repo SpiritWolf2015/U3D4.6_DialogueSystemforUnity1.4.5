@@ -249,6 +249,7 @@ public class UtilLoadAsset {
                 loadedAssetBundle.Unload(unloadAllLoadedObjects);                
             }
             s_hasLoadAssetBundle.Clear( );
+            Resources.UnloadUnusedAssets( );
             Debug.LogWarning("卸载所有已经加载的AssetBundle！");
         }
     }
